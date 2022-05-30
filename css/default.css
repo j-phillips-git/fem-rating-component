@@ -1,0 +1,74 @@
+:root {
+  --clr-body-background: #131518;
+  --clr-dark-blue: #262E38;
+  --clr-light-grey: #969FAD;
+  --clr-medium-grey: #7C8798;
+  --clr-accent: #FC7614;
+  --clr-white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--clr-body-background);
+}
+
+button {
+  border: none;
+  outline: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: ease-in 0.3s;
+}
+
+h1,
+h2,
+.btn-submit {color: var(--clr-white);}
+
+.star-wrapper,
+.btn-round {border-radius: 50%;}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0; 
+  backface-visibility: hidden; 
+}
+
+.card-content,
+.card-back,
+.star-wrapper,
+.btn-round,
+.back-rating-wrapper 
+{background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);}
+
+.btn-round:focus {
+  border: 1px solid var(--clr-accent);
+  color: var(--clr-white);
+  animation: round-anim-shadow 0.3s forwards;
+}
+
+@keyframes round-anim-shadow 
+{100% {box-shadow: 0 0 3px 1px var(--clr-accent);}}
+
+.btn-submit:focus {
+  border: 1px solid var(--clr-white);
+  color: var(--clr-white);
+  animation: submit-anim-shadow 0.3s forwards;
+}
+
+@keyframes submit-anim-shadow 
+{100% {box-shadow: 0 0 4px 2px var(--clr-white);}}

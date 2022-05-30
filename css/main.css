@@ -1,0 +1,151 @@
+
+.card {margin-top: 154px;}
+
+.card-content {
+  position: relative; 
+  padding: 12.4em;
+  transition: transform 2s; 
+  transform-style: preserve-3d; 
+  border-radius: 15px;
+}
+
+.card-turn {transform: rotateY(.5turn);}
+
+.card-front {padding: 24px 0 32px 24px;}
+
+.star-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.star-wrapper img {
+  width: 13px;
+  height: 13px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 16px 0 10px 0;
+}
+
+.sub-header {
+  color: var(--clr-light-grey);
+  width: 92%;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.select-ratings-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.select-ratings {
+  display: flex;
+  justify-content: center;
+  width: 92.08%;
+  gap: 18px;
+}
+
+.btn-round {
+  color: var(--clr-medium-grey);
+  width: 42px;
+  height: 42px;
+}
+
+.btn-submit {
+  background-color: var(--clr-accent);
+  width: 92.08%;
+  padding: 0.85em 0;
+  border-radius: 22.5px;
+  letter-spacing: 1.86px;
+  text-transform: uppercase;
+}
+
+/* CARD BACK */
+
+.card-back {
+  padding-top: 34px;
+  text-align: center;
+  border-radius: 15px;
+  transform: rotateY(.5turn);
+}
+
+.card-back img {width: 144px;}
+
+.back-rating-wrapper {
+  width: 55.66%;
+  padding: 0.5em 0.5em;
+  margin: 24px auto;
+  border-radius: 22.5px;
+}
+
+.back-rating {color: var(--clr-accent);}
+
+.back-header {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.back-sub-header {margin: 0 auto;}
+
+.btn-round:hover {
+  background: var(--clr-accent);
+  color: var(--clr-white);
+}
+
+.btn-submit:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-accent);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+
+  body {font-size: 0.9375rem;}
+
+  .card {width: 412px;}
+
+  .card-front {padding: 32px 0 32px 32px;}
+
+  .card-content {padding: 13.5em;}
+
+  .star-wrapper {
+    width: 48px;
+    height: 48px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    margin: 30px 0 15px 0;
+  }
+
+  .select-ratings-wrapper {gap: 32px;}
+
+  .select-ratings {gap: 22px;}
+
+  .btn-round {
+    font-size: 1rem;
+    width: 51px;
+    height: 51px;
+  }
+
+  /* CARD BACK */
+
+  .back-header {font-size: 1.75rem;}
+
+  .back-sub-header {width: 83%;}
+
+  .card-back {padding-top: 45px;}
+
+  .card-back img {width: 162px;}
+
+  .back-rating-wrapper {margin: 32px auto;}
+}
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Interactive rating component</title>
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <!-- EXTERNAL STYLES -->
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- SCRIPT -->
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <main class="card">
+    <div class="card-content">
+      <section class="card-front">
+        <div class="star-wrapper">
+          <img src="./images/icon-star.svg" alt="yellow star">
+        </div>
+        <header>
+          <h1>How did we do?</h1>
+          <p class="sub-header">
+            Please let us know how we did with your support request.
+            All feedback is appreciated to help us improve our offering!
+          </p>
+        </header>
+        <div class="select-ratings-wrapper">
+          <div class="select-ratings">
+            <button id="rate1" class="btn-round" type="button">1</button>
+            <button id="rate2" class="btn-round" type="button">2</button>
+            <button id="rate3" class="btn-round" type="button">3</button>
+            <button id="rate4" class="btn-round" type="button">4</button>
+            <button id="rate5" class="btn-round" type="button">5</button>
+          </div>
+
+          <div>
+            <button id="submit" class="btn-submit" type="submit">Submit</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-back">
+        <img src="./images/illustration-thank-you.svg" alt="Interact machine printing receipt">
+        <div class="back-rating-wrapper">
+          <div id="displayRating" class="back-rating"><!--InnerHTML Here--></div> 
+        </div> 
+        <header>
+          <h2 class="back-header">Thank you!</h2>
+          <p class="back-sub-header sub-header">
+            We appreciate you taking the time to give a rating. If you ever need more support,
+            don't hesitate to get in touch!
+          </p>
+        </header>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
